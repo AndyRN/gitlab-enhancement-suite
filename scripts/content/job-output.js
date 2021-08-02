@@ -7,6 +7,7 @@ DomainCheck(function () {
       );
       if (showCompleteRaw) {
         var copyJobOutput = showCompleteRaw.cloneNode(true);
+        copyJobOutput.style.marginRight = "8px";
         copyJobOutput.setAttribute("title", "Copy job output");
         copyJobOutput.removeAttribute("href");
         copyJobOutput.addEventListener("click", function () {

@@ -22,7 +22,9 @@
         "scripts/content/domain-check.js",
         "scripts/content/absolute-time.js",
         "scripts/content/collapse-all.js",
-        "scripts/content/filter-job.js",
+        "scripts/content/filter-issues.js",
+        "scripts/content/filter-jobs.js",
+        "scripts/content/filter-merge-requests.js",
         "scripts/content/job-output.js"
       ]
     }
