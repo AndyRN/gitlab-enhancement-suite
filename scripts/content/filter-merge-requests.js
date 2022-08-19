@@ -24,23 +24,20 @@ domainCheck(() => {
           toggleAutomated.setAttribute("title", "Toggle automated");
           toggleAutomated.textContent = "Toggle Automated";
           toggleAutomated.addEventListener("click", () => {
-            toggleFilter(
-              "not[label_name][]=automated",
-              "label_name[]=automated"
-            );
+            toggleFilter("not[label_name][]=automated", "label_name[]=automated");
           });
 
           firstControl.insertAdjacentElement("beforebegin", toggleAutomated);
 
-          // Add the toggle assigned filter
-          var toggleAssigned = editMergeRequests.cloneNode(true);
-          toggleAssigned.setAttribute("title", "Toggle assigned");
-          toggleAssigned.textContent = "Toggle Assigned";
-          toggleAssigned.addEventListener("click", () => {
-            toggleFilter("assignee_id=None", "assignee_id=Any");
+          // Add the toggle reviewer filter
+          var toggleReviewer = editMergeRequests.cloneNode(true);
+          toggleReviewer.setAttribute("title", "Toggle reviewer");
+          toggleReviewer.textContent = "Toggle Reviewer";
+          toggleReviewer.addEventListener("click", () => {
+            toggleFilter("reviewer_id=None", "reviewer_id=Any");
           });
 
-          firstControl.insertAdjacentElement("beforebegin", toggleAssigned);
+          firstControl.insertAdjacentElement("beforebegin", toggleReviewer);
 
           clearInterval(addFilters);
         }
