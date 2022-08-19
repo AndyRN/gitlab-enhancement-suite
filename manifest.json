@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "GitLab Enhancement Suite",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A suite of enhancements for GitLab.",
   "icons": {
     "16": "icons/icon_16.png",
